@@ -10,15 +10,15 @@ const data = [
       id: 1,
       image: IMG1,
       title: "TokenTradeX",
-      github: "https://github.com/medixitgogoi/StreamRay",
-      demo: "https://stream-ray.vercel.app/",
+      github: "https://github.com/medixitgogoi/TokenTradeX",
+      demo: "https://token-trade-x.vercel.app/",
     },
     {
       id: 2,
       image: IMG2,
       title: "SaffronSpice",
       github: "https://github.com/medixitgogoi/Restaurant-app",
-      demo: "https://dribbble.com/shots/19995243-Dating-Partner-Finder-App",
+      demo: "https://saffron-spice.vercel.app/",
     },
     {
       id: 3,
