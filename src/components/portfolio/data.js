@@ -25,7 +25,7 @@ const data = [
       image: IMG3,
       title: "Portfolio",
       github: "https://github.com/medixitgogoi/portfolio",
-      demo: "https://portfolio-nine-navy-48.vercel.app/",
+      demo: "https://portfolio-3vg8nq51i-dixitgogoi.vercel.app/",
     },
     {
       id: 4,
