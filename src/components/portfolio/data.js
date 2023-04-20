@@ -10,7 +10,7 @@ const data = [
     image: IMG1,
     title: "Netflix clone",
     github: "https://github.com/medixitgogoi/netflix-clone",
-    demo: "https://dribbble.com/shots/19995095-Shipping-Management-System",
+    demo: "https://glittering-clafoutis-7083b5.netlify.app",
   },
   {
     id: 2,
