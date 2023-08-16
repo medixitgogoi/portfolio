@@ -3,11 +3,12 @@ import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import './contact.css'
-import emailjs from 'emailjs-com'
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
 
   const form = useRef();
+  
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -32,7 +33,7 @@ const Contact = () => {
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>kargildixit.32@gmail.com</h5>
-            <a href="mailto:dixitgogoi2017@gmail.com" target="_blank">
+            <a href="mailto:kargildixit.32@gmail.com" target="_blank">
               Send a mail
             </a>
           </article>

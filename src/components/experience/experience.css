@@ -60,7 +60,7 @@
   gap: 0.8rem;
 }
 
-.experience__details>div>small{
+.experience__details > div > small {
   color: var(--color-hover);
 }
 

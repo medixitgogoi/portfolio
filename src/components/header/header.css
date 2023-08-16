@@ -1,6 +1,6 @@
 header {
-  height: 100vh;
-  padding-top: 6rem;
+  height: 70vh;
+  padding-top: 3rem;
   overflow: hidden;
 }
 
@@ -10,40 +10,45 @@ header {
   height: 100%;
 }
 
-.header__content{
-  padding: 2rem 4rem 0 4rem;
+.header__content {
+  padding: 0 4rem 0 4rem;
 }
 
-.header__content>h2{
-  font-family: 'Chivo Mono', monospace;
+.header__content > h2 {
+  font-family: "Chivo Mono", monospace;
+  text-align: center;
   color: var(--color-primary);
-  font-size: 2.7rem;
+  font-size: 2.5rem;
   line-height: 3rem;
   letter-spacing: 0.02em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 }
 
-.header__content>h3{
+.header__content > h3 {
+  margin-bottom: 1rem;
   color: var(--color-primary);
-  margin-top: 3rem;
+  font-size: 2rem;
   line-height: 2.8rem;
 }
 
-.header__content>h1{
+.header__content > h4 {
+  margin-bottom: 1rem;
   color: var(--color-primary);
-  font-family: 'Jim Nightshade', cursive;
+  font-size: 1rem;
+}
+
+.header__content > h1 {
+  color: var(--color-primary);
+  font-family: "Jim Nightshade", cursive;
   font-weight: 700;
-  letter-spacing: 0.07em;
-  line-height: 2.8rem;
+  letter-spacing: 0.06em;
+  line-height: 3.2rem;
   font-size: 5rem;
-  margin: 1.5rem 0 2rem 0;
+  margin: 2rem 0 3rem 0;
 }
 
-.header__content>h3{
-  margin-top: 1rem;
-  color: var(--color-primary);
-}
-
-.header__btn{
+.header__btn {
   width: max-content;
   margin-top: 1rem;
   margin-right: 1rem;
@@ -58,16 +63,10 @@ header {
   transition: var(--transition);
 }
 
-.header__btn:hover{
+.header__btn:hover {
   background: var(--color-white);
   color: var(--color-primary);
 }
-
-/* .header__content>p{
-  max-width: 80%;
-  margin: 0 auto;
-} */
-
 
 .header__container > h1 {
   font-family: "Jim Nightshade", cursive;
@@ -99,21 +98,16 @@ header {
 }
 
 .me {
-  /* background: linear-gradient(var(--color-primary), transparent); */
-  /* background: var(--color-primary); */
-  /* background-color: red; */
   margin-top: 4rem;
   width: 22rem;
   left: calc(50% - 11rem);
   height: 35rem;
   position: absolute;
-  /* border-radius: 12rem 12rem 1rem 1rem; */
   overflow: hidden;
   padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
 .me img {
-  /* background-color: black; */
   width: 100%;
   height: 100%;
   padding-left: 1.9rem;
@@ -124,20 +118,19 @@ header {
   right: -2.3rem;
   position: absolute;
   bottom: 5rem;
-  transform: rotate(90deg);
   font-weight: 300;
   font-size: 0.8rem;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   header {
-    height: 68vh;
+    height: 70vh;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 830px) {
   header {
-    height: 100vh;
+    height: 40vh;
   }
 
   .header__socials,
@@ -146,9 +139,8 @@ header {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 415px) {
   header {
-    height: 95%;
-    padding-top: 10px;
+    height: 100vh;
   }
 }

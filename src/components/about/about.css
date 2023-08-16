@@ -35,15 +35,18 @@
   overflow: hidden;
   background-size: cover;
   margin: 1rem 0 2rem 0;
-  background: transparent;
-  padding: 8.5px 0 10px 0;
-  /* margin-bottom: 3rem; */
-  /* transform: rotate(10deg);
-  transition: var(--transition); */
-  /* background-color: var(--color-primary-variant); */
+  background: var(--color-primary-variant);
+  padding: 8.5px 0 0 0;
+  border: 1px solid black;
+  border-radius: 1rem;
+  transition: var(--transition);
 }
 
-.about__me-image>img{
+.about__me-image:hover{
+  background-color: var(--color-white);
+}
+
+.about__me-image > img {
   border-radius: 1rem;
 }
 
@@ -86,7 +89,7 @@
   color: var(--color-hover);
 }
 
-.about__content{
+.about__content {
   padding-top: 1.5rem;
 }
 

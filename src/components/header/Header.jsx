@@ -1,53 +1,66 @@
 import React from "react";
 import "./header.css";
-import CTA from "./CTA";
+import { motion } from "framer-motion";
 import HeaderSocials from "./HeaderSocials";
 import CV from "../../assets/cv.pdf";
-// import ME from "../../assets/me-2.png";
 
 const Header = () => {
   return (
     <header>
       <div className="container header__container">
 
-        {/* <h5>Hello, I'm</h5>
-        <h1>Dixit Gogoi</h1>
-        <h5 className="text-light">Front-End Developer</h5>
-
-        <CTA /> */}
-
-        {/* <div className="me">
-          <img src={ME} alt="me-image" />
-        </div> */}
-
         <HeaderSocials />
 
         <div className="header__content">
 
-          <h2>Welcome to</h2>
-          <h2>My Personal Portfolio!</h2>
+          <motion.h2
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            Welcome to
+          </motion.h2>
 
-          {/* <p>
-            A meticulous and organized individual seeking an Entry-level position in Software Industry, preferably in the field of
-            Front-End Development. Strong ability to handle complex projects and work in a team. Innovative, creative, willing to
-            contribute ideas and upskill myself along with my peers.
-          </p> */}
+          <h3>My Personal Portfolio!</h3>
 
-          <h3>Hello👋, I'm</h3>
-          <h1>Dixit Gogoi</h1>
-          <h3>Front End Developer</h3>
+          <h4>Hello👋, I'm</h4>
 
-          <a href={CV} download className="header__btn">
+          <motion.h1
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            Dixit Gogoi
+          </motion.h1>
+
+          <h4>Front End Developer</h4>
+
+          <motion.a href={CV} download className="header__btn"
+            initial={{ translateX: -400, opacity: 0 }}
+            animate={{ translateX: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
             Get resume
-          </a>
-          <a href="#contact" className="header__btn">
+          </motion.a>
+
+          <motion.a href="#contact" className="header__btn"
+            initial={{ translateX: 400, opacity: 0 }}
+            animate={{ translateX: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.5 }}
+          >
             Hire me
-          </a>
+          </motion.a>
+
         </div>
 
-        <a href="#contact" className="scroll__down">
+        <motion.a href="#contact" className="scroll__down"
+          initial={{ opacity: 0, rotate: 0 }}
+          animate={{ opacity: 1, rotate: 90 }}
+          transition={{ duration: 0.5 }}
+        >
           Scroll down
-        </a>
+        </motion.a>
+        
       </div>
     </header>
   );
