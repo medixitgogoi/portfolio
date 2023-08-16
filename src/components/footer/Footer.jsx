@@ -10,7 +10,7 @@ const Footer = () => {
         <motion.footer id="footer"
             initial={{ opacity: 0, translateX: -400 }}
             whileInView={{ opacity: 1, translateX: 0 }}
-            transition={{duration: 0.5}}
+            transition={{ duration: 0.5 }}
         >
             <motion.a href="#" className="footer__logo"
                 initial={{ opacity: 0, scale: 2 }}
@@ -37,13 +37,13 @@ const Footer = () => {
                     whileInView={{ opacity: 1, translateY: 0 }}
                     transition={{ duration: 0.5 }}
                 ><a href="#contact">Contact</a><span>|</span></motion.li>
-                
+
                 <motion.li
                     initial={{ opacity: 0, translateY: 100 }}
                     whileInView={{ opacity: 1, translateY: 0 }}
                     transition={{ duration: 0.5 }}
                 ><a href="#experience">Experience</a><span>|</span></motion.li>
-                
+
                 <motion.li
                     initial={{ opacity: 0, translateY: -100 }}
                     whileInView={{ opacity: 1, translateY: 0 }}
@@ -52,7 +52,7 @@ const Footer = () => {
             </ul>
 
             <div className="footer__socials">
-                
+
                 <motion.a href="https://www.linkedin.com/in/dixit-gogoi-9076981b2/" target="_blank"
                     initial={{ opacity: 0, translateY: -50 }}
                     whileInView={{ opacity: 1, translateY: 0 }}
