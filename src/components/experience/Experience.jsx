@@ -1,16 +1,30 @@
-import React from 'react'
-import './experience.css'
-import { BsPatchCheckFill } from 'react-icons/bs'
+import React from 'react';
+import './experience.css';
+import { BsPatchCheckFill } from 'react-icons/bs';
+import { motion } from 'framer-motion';
 
 const Experience = () => {
     return (
         <section id='experience'>
 
-            <h5>What skills I have</h5>
-            <h2>My Experience</h2>
+            <motion.h5
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+            >What skills I have</motion.h5>
+
+            <motion.h2
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+            >My Experience</motion.h2>
 
             <div className="container experience__container">
-                <div className="experience__frontEnd">
+                <motion.div className="experience__frontEnd"
+                    initial={{ opacity: 0, translateX: -300 }}
+                    whileInView={{ opacity: 1, translateX: 0 }}
+                    transition={{ duration: 0.2 }}
+                >
                     <h3>Front End Development</h3>
                     <div className="experience__content">
                         <article className="experience__details">
@@ -85,9 +99,13 @@ const Experience = () => {
                         </article>
 
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="experience__backEnd">
+                <motion.div className="experience__backEnd"
+                    initial={{ opacity: 0, translateX: 300 }}
+                    whileInView={{ opacity: 1, translateX: 0 }}
+                    transition={{ duration: 0.2 }}
+                >
                     <h3>Back End Development</h3>
                     <div className="experience__content">
                         <article className="experience__details">
@@ -112,7 +130,7 @@ const Experience = () => {
                             </div>
                         </article>
 
-                       
+
                         <article className="experience__details">
                             <BsPatchCheckFill className="experience__details-icon" />
                             <div>
@@ -128,7 +146,7 @@ const Experience = () => {
                             </div>
                         </article>
                     </div>
-                </div>
+                </motion.div>
             </div>
 
         </section>

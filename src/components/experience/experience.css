@@ -20,7 +20,7 @@
 .experience__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .experience__container > div {
@@ -52,7 +52,7 @@
 .experience__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
+  row-gap: 1.5rem;
 }
 
 .experience__details {
