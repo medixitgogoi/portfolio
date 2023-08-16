@@ -7,11 +7,7 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
     return (
-        <motion.footer id="footer"
-            initial={{ opacity: 0, translateX: -400 }}
-            whileInView={{ opacity: 1, translateX: 0 }}
-            transition={{ duration: 0.5 }}
-        >
+        <footer id="footer">
             <motion.a href="#" className="footer__logo"
                 initial={{ opacity: 0, scale: 2 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -80,10 +76,10 @@ const Footer = () => {
             </div>
 
             <div className="footer__copyright">
-                <small>&copy; DIXIT All rights reserved.</small>
+                <h5>&copy; DIXIT All rights reserved.</h5>
             </div>
 
-        </motion.footer>
+        </footer>
     )
 }
 

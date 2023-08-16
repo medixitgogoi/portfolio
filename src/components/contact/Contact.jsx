@@ -41,9 +41,9 @@ const Contact = () => {
       <div className="container contact__container">
         <div className="contact__options">
           <motion.article className="contact__option"
-            initial={{ opacity: 0, translateX: -200 }}
-            whileInView={{ opacity: 1, translateX: 0 }}
-            transition={{ duration: 0.2 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
           >
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
@@ -54,9 +54,9 @@ const Contact = () => {
           </motion.article>
 
           <motion.article className="contact__option"
-            initial={{ opacity: 0, translateX: 200 }}
-            whileInView={{ opacity: 1, translateX: 0 }}
-            transition={{ duration: 0.2 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
           >
             <RiMessengerLine className="contact__option-icon" />
             <h4>Messenger</h4>
@@ -67,9 +67,9 @@ const Contact = () => {
           </motion.article>
 
           <motion.article className="contact__option"
-            initial={{ opacity: 0, translateX: -200 }}
-            whileInView={{ opacity: 1, translateX: 0 }}
-            transition={{ duration: 0.2 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
           >
             <BsWhatsapp className="contact__option-icon" />
             <h4>Whatsapp</h4>
@@ -82,27 +82,27 @@ const Contact = () => {
 
         <form ref={form} onSubmit={sendEmail}>
           <motion.input type="text" name='name' placeholder="Your Full Name" required
-            initial={{ opacity: 0, translateX: -200 }}
-            whileInView={{ opacity: 1, translateX: 0 }}
-            transition={{ duration: 0.2 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
           />
 
           <motion.input type="email" name='email' placeholder="Your Email" required
-            initial={{ opacity: 0, translateX: 200 }}
-            whileInView={{ opacity: 1, translateX: 0 }}
-            transition={{ duration: 0.2 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
           />
-          
-          <motion.textarea name='message' rows='7' placeholder="Your message for me" required 
-            initial={{ opacity: 0, translateX: -200 }}
-            whileInView={{ opacity: 1, translateX: 0 }}
-            transition={{ duration: 0.2 }}
+
+          <motion.textarea name='message' rows='7' placeholder="Your message for me" required
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
           />
-          
+
           <motion.button type='submit' className='btn btn-primary'
-            initial={{ opacity: 0, translateX: 200 }}
-            whileInView={{ opacity: 1, translateX: 0 }}
-            transition={{ duration: 0.2 }}
+            initial={{ opacity: 0, scale: 0.5 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
           >Send message</motion.button>
         </form>
       </div>

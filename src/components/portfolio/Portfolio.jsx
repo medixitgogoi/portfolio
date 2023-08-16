@@ -23,9 +23,9 @@ const Portfolio = () => {
           return (
 
             <motion.article key={id} className="portfolio__item"
-              initial={{ opacity: 0, translateY: index%2==0?-100:100 }}
-              whileInView={{ opacity: 1, translateY: 0 }}
-              transition={{ duration: 0.2, delay: index*0.2 }}
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.2 }}
             >
               <div className="portfolio__item-image">
                 <img src={image} alt={title} />
@@ -40,7 +40,7 @@ const Portfolio = () => {
                 </a>
               </div>
             </motion.article>
-            
+
           );
         })}
       </div>

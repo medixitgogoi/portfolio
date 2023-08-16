@@ -21,8 +21,8 @@ const Experience = () => {
 
             <div className="container experience__container">
                 <motion.div className="experience__frontEnd"
-                    initial={{ opacity: 0, translateX: -300 }}
-                    whileInView={{ opacity: 1, translateX: 0 }}
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.2 }}
                 >
                     <h3>Front End Development</h3>
@@ -102,8 +102,8 @@ const Experience = () => {
                 </motion.div>
 
                 <motion.div className="experience__backEnd"
-                    initial={{ opacity: 0, translateX: 300 }}
-                    whileInView={{ opacity: 1, translateX: 0 }}
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.2 }}
                 >
                     <h3>Back End Development</h3>

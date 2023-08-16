@@ -15,7 +15,7 @@ const Header = () => {
 
           <motion.h2
             initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
             Welcome to
@@ -27,7 +27,7 @@ const Header = () => {
 
           <motion.h1
             initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
           >
             Dixit Gogoi
@@ -37,7 +37,7 @@ const Header = () => {
 
           <motion.a href={CV} download className="header__btn"
             initial={{ translateX: -400, opacity: 0 }}
-            animate={{ translateX: 0, opacity: 1 }}
+            whileInView={{ translateX: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
             Get resume
@@ -45,7 +45,7 @@ const Header = () => {
 
           <motion.a href="#contact" className="header__btn"
             initial={{ translateX: 400, opacity: 0 }}
-            animate={{ translateX: 0, opacity: 1 }}
+            whileInView={{ translateX: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.5 }}
           >
             Hire me
@@ -55,12 +55,12 @@ const Header = () => {
 
         <motion.a href="#contact" className="scroll__down"
           initial={{ opacity: 0, rotate: 0 }}
-          animate={{ opacity: 1, rotate: 90 }}
+          whileInView={{ opacity: 1, rotate: 90 }}
           transition={{ duration: 0.5 }}
         >
           Scroll down
         </motion.a>
-        
+
       </div>
     </header>
   );

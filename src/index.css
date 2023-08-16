@@ -9,7 +9,7 @@
   text-decoration: none;
   list-style: none;
 }
-/* #2c2c6c */
+
 :root {
   --color-bg: #1f1f38;
   --color-bg-variant: #4db5ff;
@@ -28,9 +28,9 @@ html {
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   display: none;
-}
+} */
 
 body {
   font-family: "Noto Sans", sans-serif;
@@ -57,7 +57,7 @@ h1 {
 }
 
 section {
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 section > h2,

@@ -3,22 +3,38 @@ import './about.css'
 import ME from '../../assets/me-2.png'
 import { FaAward } from 'react-icons/fa'
 import { VscFolderLibrary } from 'react-icons/vsc'
+import { motion } from 'framer-motion'
 
 const About = () => {
     return (
         <section id='about'>
-            <h5>Get to know</h5>
-            <h2>About Me</h2>
+            <motion.h5
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+            >Get to know</motion.h5>
+
+            <motion.h2
+                initial={{ opacity: 0, scale: 0 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5}}
+            >About Me</motion.h2>
+
             <div className="container about__container">
 
-                {/* <div className="about__me">
-                </div> */}
-
-                <div className="about__me-image">
+                <motion.div className="about__me-image"
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.2 }}
+                >
                     <img src={ME} alt="About image" />
-                </div>
+                </motion.div>
 
-                <div className="about__content">
+                <motion.div className="about__content"
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.2 }}
+                >
                     <div className="about__cards">
                         <article className="about__card">
                             <FaAward className="about__icon" />
@@ -36,10 +52,14 @@ const About = () => {
                         contribute ideas and upskill myself along with my peers.
                     </p>
                     <a href="#contact" className="btn btn-primary">Let's Talk</a>
-                </div>
+                </motion.div>
+
             </div>
         </section>
     )
 }
 
 export default About
+
+
+
