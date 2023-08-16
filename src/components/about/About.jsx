@@ -17,7 +17,7 @@ const About = () => {
             <motion.h2
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5}}
+                transition={{ duration: 0.5 }}
             >About Me</motion.h2>
 
             <div className="container about__container">
@@ -36,22 +36,39 @@ const About = () => {
                     transition={{ duration: 0.2 }}
                 >
                     <div className="about__cards">
-                        <article className="about__card">
+                        <motion.article className="about__card"
+                            initial={{ opacity: 0, scale: 0.5 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.2 }}
+                        >
                             <FaAward className="about__icon" />
                             <h5>Experience</h5>
                             <h6>Fresher level</h6>
-                        </article>
-                        <article className="about__card">
+                        </motion.article>
+
+                        <motion.article className="about__card"
+                            initial={{ opacity: 0, scale: 0.5 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.2 }}
+                        >
                             <VscFolderLibrary className="about__icon" />
                             <h5>Projects</h5>
                             <h6>5+ completed</h6>
-                        </article>
+                        </motion.article>
                     </div>
-                    <p>A meticulous and organized individual seeking an Entry-level position in Software Industry, preferably in the field of
+                    <motion.p
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.2 }}
+                    >A meticulous and organized individual seeking an Entry-level position in Software Industry, preferably in the field of
                         Front-End Development. Strong ability to handle complex projects and work in a team. Innovative, creative, willing to
                         contribute ideas and upskill myself along with my peers.
-                    </p>
-                    <a href="#contact" className="btn btn-primary">Let's Talk</a>
+                    </motion.p>
+                    <motion.a href="#contact" className="btn btn-primary"
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.2 }}
+                    >Let's Talk</motion.a>
                 </motion.div>
 
             </div>

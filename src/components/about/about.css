@@ -1,3 +1,9 @@
+#about{
+  /* background-color: red; */
+  padding-top: 3rem;
+  /* height: 100vh; */
+}
+
 #about > h5 {
   font-size: 0.9rem;
   color: var(--color-bg-variant);
@@ -10,7 +16,7 @@
 
 .about__container {
   display: grid;
-  grid-template-columns: 35% 55%;
+  grid-template-columns: 40% 60%;
   gap: 10%;
 }
 
