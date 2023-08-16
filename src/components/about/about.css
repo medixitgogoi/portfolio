@@ -1,7 +1,5 @@
 #about{
-  /* background-color: red; */
   padding-top: 3rem;
-  /* height: 100vh; */
 }
 
 #about > h5 {
@@ -106,14 +104,19 @@
 
   .about__content p {
     margin: 1rem 0 1.5rem;
+    /* font-size: 1.2rem; */
   }
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 830px) {
   .about__me {
     width: 65%;
     height: fit-content;
     margin: 0 auto 3rem;
+  }
+
+  #about > h5 {
+    font-size: 0.8rem;
   }
 
   .about__cards {
@@ -127,8 +130,9 @@
 
   .about__content p {
     margin: 1.5rem auto;
+    font-size: 1.2rem;
   }
-}
+} */
 
 @media screen and (max-width: 400px) {
   .about__me {
