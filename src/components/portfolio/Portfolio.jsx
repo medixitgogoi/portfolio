@@ -1,17 +1,32 @@
 import React from "react";
 import "./portfolio.css";
 import data from "./data";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <motion.h5
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >My Recent Work</motion.h5>
+
+      <motion.h2
+        initial={{ opacity: 0, scale: 0 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >Portfolio</motion.h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, demo }) => {
+        {data.map(({ id, image, title, github, demo }, index) => {
           return (
-            <article key={id} className="portfolio__item">
+
+            <motion.article key={id} className="portfolio__item"
+              initial={{ opacity: 0, translateY: index%2==0?-100:100 }}
+              whileInView={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.2, delay: index*0.2 }}
+            >
               <div className="portfolio__item-image">
                 <img src={image} alt={title} />
               </div>
@@ -24,7 +39,8 @@ const Portfolio = () => {
                   Live Demo
                 </a>
               </div>
-            </article>
+            </motion.article>
+            
           );
         })}
       </div>
