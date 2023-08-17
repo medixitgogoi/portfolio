@@ -133,14 +133,6 @@ header {
     height: max-content;
   }
 
-  .header__content > h4 {
-    /* font-size: 1.5rem; */
-  }
-
-  /* .header__btn {
-    padding: 0.8rem 1rem;
-  } */
-
   .header__socials,
   .scroll__down {
     display: none;
@@ -151,5 +143,9 @@ header {
   header {
     padding-top: 4rem;
     height: max-content;
+  }
+  .header__btn {
+    padding: 0.4rem 0.4rem;
+    margin-right: 0.5rem;
   }
 }
