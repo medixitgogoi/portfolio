@@ -53,7 +53,7 @@ const About = () => {
                         >
                             <VscFolderLibrary className="about__icon" />
                             <h5>Projects</h5>
-                            <h6>5+ completed</h6>
+                            <h6>7+ completed</h6>
                         </motion.article>
                     </div>
                     <motion.p
