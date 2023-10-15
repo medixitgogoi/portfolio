@@ -8,37 +8,37 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Netflix clone",
-    github: "https://github.com/medixitgogoi/netflix-clone",
-    demo: "https://glittering-clafoutis-7083b5.netlify.app",
+    title: "Filmaniac",
+    github: "https://github.com/medixitgogoi/Filmaniac",
+    demo: "https://filmaniac.vercel.app/",
   },
   {
     id: 2,
     image: IMG2,
+    title: "Youtube-Clone",
+    github: "https://github.com/medixitgogoi/youtube-clone",
+    demo: "https://devdixit-youtube-clone.netlify.app/",
+  },
+  {
+    id: 3,
+    image: IMG3,
+    title: "Google-Search-Clone",
+    github: "https://github.com/medixitgogoi/Google-Plus",
+    demo: "https://google-search-clone-nu.vercel.app/",
+  },
+  {
+    id: 4,
+    image: IMG4,
     title: "TokenTradeX",
     github: "https://github.com/medixitgogoi/TokenTradeX",
     demo: "https://token-trade-x.vercel.app/",
   },
   {
-    id: 3,
-    image: IMG3,
+    id: 5,
+    image: IMG5,
     title: "SaffronSpice",
     github: "https://github.com/medixitgogoi/Restaurant-app",
     demo: "https://saffron-spice.vercel.app/",
-  },
-  {
-    id: 4,
-    image: IMG4,
-    title: "Portfolio",
-    github: "https://github.com/medixitgogoi/portfolio",
-    demo: "https://portfolio-nine-navy-48.vercel.app/",
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: "StreamRay",
-    github: "https://github.com/medixitgogoi/StreamRay",
-    demo: "https://stream-ray.vercel.app/",
   },
   // {
   //   id: 6,
@@ -50,6 +50,22 @@ const data = [
 ];
 
 export default data;
+
+// {
+//   id: 2,
+//     image: IMG2,
+//       title: "TokenTradeX",
+//         github: "https://github.com/medixitgogoi/TokenTradeX",
+//           demo: "https://token-trade-x.vercel.app/",
+//   },
+
+// {
+//   id: 3,
+//     image: IMG3,
+//       title: "SaffronSpice",
+//         github: "https://github.com/medixitgogoi/Restaurant-app",
+//           demo: "https://saffron-spice.vercel.app/",
+//   },
 
 
 
