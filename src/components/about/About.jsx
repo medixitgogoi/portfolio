@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me-2.png'
+import ME from '../../assets/me-3.png'
 import { FaAward } from 'react-icons/fa'
 import { VscFolderLibrary } from 'react-icons/vsc'
 import { motion } from 'framer-motion'
@@ -27,7 +27,7 @@ const About = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.2 }}
                 >
-                    <img src={ME} alt="About image" />
+                    <img src={ME} alt="About" />
                 </motion.div>
 
                 <motion.div className="about__content"
