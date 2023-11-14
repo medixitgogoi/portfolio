@@ -24,7 +24,7 @@ const data = [
     image: IMG3,
     title: "Google-Search-Clone",
     github: "https://github.com/medixitgogoi/Google-Plus",
-    demo: "https://google-search-clone-nu.vercel.app/",
+    demo: "https://google-plus.vercel.app/",
   },
   {
     id: 4,
