@@ -19,7 +19,7 @@ const Portfolio = () => {
       >Portfolio</motion.h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, demo }, index) => {
+        {data.map(({ id, image, title, github, demo }) => {
           return (
 
             <motion.article key={id} className="portfolio__item"

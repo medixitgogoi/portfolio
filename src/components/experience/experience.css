@@ -36,6 +36,7 @@
   cursor: default;
   color: var(--color-primary);
   border-color: var(--color-primary);
+  box-shadow: #2c2c6c 0px 7px 29px 0px;
 }
 
 .text-light {

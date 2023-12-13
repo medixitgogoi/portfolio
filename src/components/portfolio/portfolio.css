@@ -18,22 +18,24 @@
   padding: 1rem;
   background-color: var(--color-primary);
   border: 1px solid transparent;
-  border-radius: 0.5rem;
+  border-radius: 0.7rem;
   transition: var(--transition);
 }
 
 .portfolio__item:hover {
   background: var(--color-white);
   border-color: var(--color-primary);
+  box-shadow: #2c2c6c 0px 7px 29px 0px;
 }
 
 .portfolio__item-image {
-  border-radius: 0.5rem;
   overflow: hidden;
 }
 
 .portfolio__item-image > img {
-  max-height: 10rem;
+  /* max-height: 10rem; */
+  border-radius: 0.7rem;
+  border: 2px solid var(--color-primary);
 }
 
 .portfolio__item > h3 {
