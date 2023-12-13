@@ -86,14 +86,15 @@ textarea {
   }
   .contact__option > h4 {
     font-size: 1.2rem;
-  } 
+  }
   .contact__option > h5 {
     font-size: 1rem;
-  } 
+  }
   .contact__option > a {
     font-size: 1rem;
   }
-  input,textarea{
+  input,
+  textarea {
     font-size: 1rem;
   }
 }

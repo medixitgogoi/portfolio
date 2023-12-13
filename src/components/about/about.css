@@ -1,4 +1,4 @@
-#about{
+#about {
   padding-top: 3rem;
 }
 
@@ -78,12 +78,19 @@
 
 .about__content {
   padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about__content p {
   margin: 2rem 0 2.6rem;
   font-size: 0.8rem;
   color: var(--color-primary);
+}
+
+.animateButton {
+  animation: fadeInOut 1.2s infinite;
 }
 
 @media screen and (max-width: 1024px) {
@@ -104,38 +111,27 @@
 
   .about__content p {
     margin: 1rem 0 1.5rem;
-    /* font-size: 1.2rem; */
   }
 }
-
-/* @media screen and (max-width: 830px) {
-  .about__me {
-    width: 65%;
-    height: fit-content;
-    margin: 0 auto 3rem;
-  }
-
-  #about > h5 {
-    font-size: 0.8rem;
-  }
-
-  .about__cards {
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-  }
-
-  .about__content {
-    text-align: center;
-  }
-
-  .about__content p {
-    margin: 1.5rem auto;
-    font-size: 1.2rem;
-  }
-} */
 
 @media screen and (max-width: 400px) {
   .about__me {
     height: fit-content;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+  50% {
+    background: var(--color-white);
+    color: var(--color-primary) ;
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
   }
 }

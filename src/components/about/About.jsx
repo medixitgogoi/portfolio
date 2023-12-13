@@ -60,15 +60,24 @@ const About = () => {
                         initial={{ opacity: 0, scale: 0.5 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.2 }}
-                    >A meticulous and organized individual seeking an Entry-level position in Software Industry, preferably in the field of
-                        Front-End Development. Strong ability to handle complex projects and work in a team. Innovative, creative, willing to
-                        contribute ideas and upskill myself along with my peers.
+                    >
+                        As a passionate and eager Front-End Developer with a strong foundation in front-end technologies, I'm currently expanding my skill set to encompass full-stack development, aiming to master both front-end and back-end technologies to build robust and interactive web solutions. I'm ready to collaborate with like-minded professionals, take on challenging projects, and explore the endless possibilities of creating seamless online experiences.
                     </motion.p>
-                    <motion.a href="#contact" className="btn btn-primary"
+                    <motion.p
                         initial={{ opacity: 0, scale: 0.5 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.2 }}
-                    >Let's Talk</motion.a>
+                        className='about__highlight'
+                    >
+                        If your requirements match my profile, click the button below for further discussion 👇
+                    </motion.p>
+                    <motion.a href="#contact" className="btn btn-primary animateButton"
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.2 }}
+                    >
+                        Let's Talk
+                    </motion.a>
                 </motion.div>
 
             </div>
