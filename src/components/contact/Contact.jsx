@@ -3,7 +3,7 @@ import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import './contact.css'
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -13,7 +13,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_y6b6yeu', 'template_8hl23ea', form.current, 'stOL20Rdz3s-zhKkv')
+    emailjs.sendForm('service_ec71ajn', 'template_ibcqnx8', form.current, 'bdJp0PvCcTjry03cR')
       .then((result) => {
         console.log(result.text);
       }, (error) => {
