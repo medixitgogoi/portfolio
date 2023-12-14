@@ -8,11 +8,11 @@ import { motion } from 'framer-motion';
 const Footer = () => {
     return (
         <footer id="footer">
-            <motion.a href="#" className="footer__logo"
+            <motion.h1 href="#" className="footer__logo"
                 initial={{ opacity: 0, scale: 2 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-            >DIXIT GOGOI</motion.a>
+            >DIXIT GOGOI</motion.h1>
 
             <ul className="permalinks"
             >

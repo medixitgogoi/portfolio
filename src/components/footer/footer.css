@@ -12,10 +12,12 @@ footer a {
 }
 
 .footer__logo {
-  font-size: 1.3rem;
+  color: var(--color-primary);
+  font-size: 2rem;
+  letter-spacing: 0.05em;
   font-weight: 500;
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 
 .permalinks {
