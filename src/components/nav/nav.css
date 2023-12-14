@@ -25,8 +25,7 @@
 }
 
 .nav a:hover {
-  background: var(--color-bg-variant);
- 
+  background: var(--color-primary);
 }
 
 .nav a.active {
