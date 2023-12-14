@@ -66,6 +66,7 @@ header {
 .header__btn:hover {
   background: var(--color-white);
   color: var(--color-primary);
+  box-shadow: var(--color-primary) 0px 5px 20px 2px;
 }
 
 .header__container > h1 {
